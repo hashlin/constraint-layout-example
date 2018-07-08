@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <Button
+      android:id="@+id/button"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="Button"
+      app:layout_constraintEnd_toStartOf="@+id/button2"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintHorizontal_chainStyle="spread_inside"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:layout_editor_absoluteY="208dp"
+      />
+  <Button
+      android:id="@+id/button2"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="Button"
+      app:layout_constraintEnd_toStartOf="@+id/button4"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/button"
+      tools:layout_editor_absoluteY="208dp"
+      />
+  <Button
+      android:id="@+id/button4"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="Button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/button2"
+      tools:layout_editor_absoluteY="208dp"
+      />
+</android.support.constraint.ConstraintLayout>

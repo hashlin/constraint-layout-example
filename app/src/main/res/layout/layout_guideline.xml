@@ -2,22 +2,27 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fafafa"
     >
+  <Button
+      android:id="@+id/button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Hello IO Extended"
+      app:layout_constraintEnd_toStartOf="@+id/guideline3"
+      app:layout_constraintStart_toStartOf="@+id/guideline3"
+      tools:layout_editor_absoluteY="73dp"
+      style="@style/Widget.AppCompat.Button.Colored"
+      />
+  <android.support.constraint.Guideline
+      android:id="@+id/guideline3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.4"
+      />
 
-  <Button
-      android:id="@+id/buttonA"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Button A"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      />
-  <Button
-      android:id="@+id/buttonB"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Button B"
-      />
 </android.support.constraint.ConstraintLayout>

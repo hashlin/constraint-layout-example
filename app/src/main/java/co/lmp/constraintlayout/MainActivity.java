@@ -33,7 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
     findViewById(R.id.btnBuy).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
+        // Need for transition
         TransitionManager.beginDelayedTransition(constraintLayout);
+
         if (isExpanded) {
           constraintSetInitial.applyTo(constraintLayout);
         } else {

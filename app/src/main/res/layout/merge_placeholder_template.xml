@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<merge
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    tools:parentTag="android.support.constraint.ConstraintLayout"
     >
-
-  <TextView
-      android:id="@+id/text"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+  <android.support.constraint.Placeholder
+      android:id="@+id/placeholder_image"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:content="@+id/image"
+      app:layout_constraintDimensionRatio="1:1"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.3"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      tools:text="Hello Bias"
       />
-</android.support.constraint.ConstraintLayout>
+</merge>

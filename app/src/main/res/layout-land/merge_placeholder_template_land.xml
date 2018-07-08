@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<merge
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:parentTag="android.support.constraint.ConstraintLayout"
     >
-  <ImageView
+  <android.support.constraint.Placeholder
+      android:id="@+id/placeholder_image"
       android:layout_width="0dp"
       android:layout_height="0dp"
-      android:scaleType="centerCrop"
-      app:layout_constraintDimensionRatio="w,16:9"
+      app:content="@+id/image"
+      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      tools:src="@tools:sample/backgrounds/scenic"
+      app:layout_constraintStart_toStartOf="parent"
       />
-</android.support.constraint.ConstraintLayout>
+</merge>
